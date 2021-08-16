@@ -1,0 +1,14 @@
+{
+  "name": "elevator-system",
+  "version": "1.0.0",
+  "author": "Jon Cameron",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node -r esm main.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "esm": "^3.2.25"
+  }
+}
