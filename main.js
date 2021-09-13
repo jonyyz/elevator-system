@@ -139,8 +139,6 @@ const rl = readline.createInterface({
 rl.prompt();
 
 rl.on("line", (line) => {
-  let quit = false;
-
   switch (line.trim().toLowerCase()) {
     case "n":
       elevatorSystem.tick();
@@ -150,7 +148,7 @@ rl.on("line", (line) => {
       return;
   }
 
-  if (!quit) rl.prompt();
+  rl.prompt();
 }).on("close", () => {
   console.log("Have a great day!");
 });
